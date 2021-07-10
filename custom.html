@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Property</title>
+    <style>
+        :root {
+            --main-color: chocolate;
+            --border-color: yellow;
+            --dark-border: 2px solid black;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        p {
+            color: var(--main-color);
+            border: 2px solid var(--border-color);
+        }
+
+        h2 {
+            color: var(--main-color);
+        }
+
+        footer {
+            border: var(--dark-border);
+            clear: both;
+        }
+
+        .side-nav,
+        .blogs {
+            float: left;
+            height: 200px;
+        }
+
+        aside {
+            background-color: hotpink;
+            width: 250px;
+        }
+
+        .blogs {
+            background-color: maroon;
+            width: calc(100%-200px);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>I am exploring Custom CSSS</h1>
+    </header>
+    <main>
+        <p>আমার অয়েব সাইটে স্বাগতম</p>
+
+        <h2>Kemon acen?</h2>
+    </main>
+    <section>
+        <aside class="side-nav">
+            My side navigation
+        </aside>
+        <div class="blogs">
+            <h3>My Blog</h3>
+        </div>
+    </section>
+    <footer>
+        <small>Copyright: Imriaz</small>
+    </footer>
+
+
+</body>
+
+</html>
